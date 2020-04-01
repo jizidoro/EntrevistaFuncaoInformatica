@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="0.13.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\EntrevistaFuncaoInformatica.Application\EntrevistaFuncaoInformatica.Application.csproj" />
+    <ProjectReference Include="..\..\src\EntrevistaFuncaoInformatica.Core\EntrevistaFuncaoInformatica.Core.csproj" />
+    <ProjectReference Include="..\..\src\EntrevistaFuncaoInformatica.Domain\EntrevistaFuncaoInformatica.Domain.csproj" />
+    <ProjectReference Include="..\..\src\EntrevistaFuncaoInformatica.Infrastructure\EntrevistaFuncaoInformatica.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
